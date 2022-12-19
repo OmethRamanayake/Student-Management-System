@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System | Calendar page</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6edc2a7555.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <div class="menumain">
+        <a href="#" class="user" data-hover="User"><i class="fa-regular fa-user"></i></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" class="calendar" data-hover="Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="#" class="profile" data-hover="Profile"><i class="fa-solid fa-id-card"></i></a>
+        <a href="#" class="registry" data-hover="Registry"><i class="fa-solid fa-book"></i></a>
+        <a href="/Student_Page/index.html" data-hover="Students &amp; Classes"><i class="fa-solid fa-user-graduate"></i></a>
+    </div>
+    <br>
+    <div class="menusub">
+        <a href="#"><i class="fa-solid fa-question"></i></a>
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+
+    <a href="#" style="padding: 30px; font-size: 15px;">More about us</a>
+  </div>
+
+  <a href="#" class="settingicon"><i style="color: black; text-decoration: none; padding-left: 90px; position: fixed; font-size: 50px;" class="fa-solid fa-gear"></i></a>
+    
+  <!-- Use any element to open the sidenav -->
+  <span class="menuicon" onclick="openNav()"><i style="padding-left: 15px; position: fixed; font-size: 50px;" class="fa-solid fa-bars"></i></span>
+
+  <div class="event-container">
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date"></div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title"><button class="button open-button"><i style="margin-left: 160px; margin-right: 200px; font-size: 100px; color: black;" class="fa-solid fa-plus"></i></button></h3>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="event-container">
+    <h3 class="year">2022</h3>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Fri 2nd Dec</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          <img src="images/time.png" alt="" /> 10:00 am
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Sat 3rd Dec</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          12:00 am
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Tue 6th Dec</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          12:00 am
+        </div>
+      </div>
+    </div>
+
+    <h3 class="year">2023</h3>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Mon 2nd Jan</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          <img src="images/time.png" alt="" /> 10:00 am
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Tue 3rd Jan</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          12:00 am
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">Fri 6th Jan</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Event Name</h3>
+
+        <div class="event-timing">
+          12:00 am
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <dialog class="modal" id="modal">
+    <h2>Create New Event</h2>
+    <form action="#">
+      <label for="name">Event Name:</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date">
+      <br><br>
+      <button class="button close-button"><input type="submit"></button>
+      <button class="button close-button">Cancel</button>
+    </form>
+  </dialog>
+
+</body>
+</html>
